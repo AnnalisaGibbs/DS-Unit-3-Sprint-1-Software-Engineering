@@ -268,6 +268,10 @@ career here, you'll have to answer the following:
 
 Answer both of these questions (baseline ~5 sentences) here in text.
 
+-In my opinion readability is important. It should be easy for the next set of eyes or other members of your team to use the code easily. Brevity and simplification is also important. 
+
+-Containers enables you to build and package your code so that it can run in any other environments, standardizing it in a sense. This is important for teams to be able to work on projects without the fuss of varying environments. 
+
 ### Part 8 - Turn it in!
 
 Provide all the files you wrote (`acme.py`, `acme_report.py`, and
