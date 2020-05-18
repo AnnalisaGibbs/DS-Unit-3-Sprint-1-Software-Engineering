@@ -1,7 +1,9 @@
 import random
 
+
 class Product():
-    def __init__(self, name = '', price = 10, weight = 20, flammability = .5, identifier = random.randint(1000000,9999999)):
+    def __init__(self, name='', price=10, weight=20, flammability=.5,
+                 identifier=random.randint(1000000, 9999999)):
         self.name = name
         self.price = price
         self.weight = weight
@@ -12,7 +14,7 @@ class Product():
         if(self.weight == 0):
             return "FUGHEDDABOUTIT"
 
-        stealability_ratio = self.price/self.weight;
+        stealability_ratio = self.price / self.weight
 
         if(stealability_ratio < .5):
             return "Not so stealable..."
@@ -30,21 +32,24 @@ class Product():
 
         if(10 <= explodability < 50):
             return "...boom!"
-        
+
         return "...BABOOM!!"
 
+
 class BoxingGlove(Product):
-    def __init__(self, name = '', price = 10, weight = 20, flammability = .5, identifier = random.randint(1000000,9999999)):
-        super().__init__(name,price,weight,flammability,identifier)
+    def __init__(self, name='', price=10, weight=20, flammability=.5,
+                 identifier=random.randint(1000000, 9999999)):
+        super().__init__(name, price, weight, flammability, identifier)
 
     def punch(self):
         if(self.weight < 5):
             return "That tickles."
-        
+
         if(5 <= self.weight < 15):
             return "Hey that hurt!"
 
         return "OUCH!"
+
 
 if __name__ == "__main__":
     pass
